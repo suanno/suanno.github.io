@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+
+<div id="file-tree"></div>
+<script>
+    $(function () {
+        $('#file-tree').jstree({
+            'core': {
+                'data': [
+                    { "text": "folder1", "children": [
+                        { "text": "file1.txt", "icon": "jstree-file", "a_attr": { "href": "path/to/file1.txt" } },
+                        { "text": "file2.txt", "icon": "jstree-file", "a_attr": { "href": "path/to/file2.txt" } }
+                    ]},
+                    { "text": "folder2", "children": [
+                        { "text": "file3.txt", "icon": "jstree-file", "a_attr": { "href": "path/to/file3.txt" } }
+                    ]}
+                ]
+            }
+        });
+    });
+</script>
